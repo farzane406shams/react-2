@@ -1,0 +1,388 @@
+
+
+.product-card {
+  width: 230px;
+  padding: 20px;
+  border: 1.5px solid #141414;
+  border-radius: 12px;
+  background-color:  #ebe8e8f8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+   gap: 12px;
+  transition: transform 0.3s ease;
+  margin-top: 60px;
+margin: 50px auto 0;
+  
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+
+}
+
+.product-image {
+  width: 230px;
+  height: 150px;
+  object-fit: contain;
+  background-color: rgba(182, 180, 180, 0.938);
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-info p {
+  margin: 0;
+  font-size: 15px;
+  color: #1b1b1b;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.product-info  {
+  color: #141414;
+  
+}
+.product-info button:hover {
+  background-color: rgb(190, 189, 189);
+  
+}
+
+
+.white-label {
+  color: black;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  overflow-x: auto;
+    min-height: 100px;
+  line-height: 1.8;
+  overflow: hidden;
+  line-height: 1.8;
+}
+
+/* user css*/
+
+.users-container h1 {
+  text-align: center;
+  color: #201644;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.users-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.user-card {
+  background-color: #c0c0c4e3;
+  border: 2px solid  #146918f3;
+  border-radius: 30px;
+  padding: 22px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  width: 420px;
+
+  }
+
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.user-card h3 {
+  color: #010142;
+  font-size: 20px;
+  margin: 0 0 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #01284d;
+  text-transform: capitalize;
+}
+
+.user-card p {
+  color: #111111;
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 8px 0;
+}
+.user-card img{
+  margin-left: 300px;
+  width: 90px;
+}
+
+/* Header css*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+border-radius: 5px;
+ border-color: #0f1011;
+  background: rgba(126, 121, 153, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(53, 51, 51, 0.4);
+  box-shadow:
+   inset 0 2px 4px rgba(32, 32, 32, 0.8),
+  inset 0 -3px 6px rgba(12, 12, 12, 0.22);
+}
+
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  color:black;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #c6fd93;
+}
+
+.shop-button:hover {
+  background-color:  #c6fd93;
+}
+
+.nav-links {
+  gap: 18px;
+  flex-wrap: wrap;
+ justify-content: center;
+  }
+
+
+.shop-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: white;
+  color: #172554;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.shop-button img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+
+/* footer css */
+
+.footer {
+border-radius: 5px;
+ border-color: #0f1011;
+  background: rgba(121, 116, 150, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(53, 51, 51, 0.4);
+   box-shadow:
+ inset 0 2px 4px rgba(32, 32, 32, 0.8),
+   inset 0 -3px 6px rgba(12, 12, 12, 0.22);
+  color: #ffffff;
+  padding: 35px 25px;
+  margin-top: 40px;
+  border:  black;
+  border-radius: 1px;
+ 
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+ 
+}
+
+.footer-section h3 {
+  color:  white;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer-section a {
+  display: block;
+  color: #0f1011;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+.footer-section a:hover {
+  color: #c6fd93;
+}
+ .footer-section {
+    text-align: center;
+ }
+
+
+/*about css*/
+.about-page {
+  padding: 35px 6%;
+  color: #333;
+  text-align: center;
+}
+
+/* Hero Section */
+.about-hero {
+  padding: 65px 20px;
+  margin-bottom: 35px;
+  border-radius: 18px;
+   background: rgba(111, 111, 112, 0.301);
+    border: 1px solid rgba(231, 173, 173, 0.8);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.about-hero h1 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.about-hero > p:first-of-type {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.hero-description {
+  max-width: 550px;
+  margin: 15px auto 0;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Our Story */
+.about-story {
+  max-width: 750px;
+  margin: 0 auto 45px;
+  line-height: 1.9;
+}
+
+.about-story h2,
+.about-features h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.about-story p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Feature Cards */
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin: 25px 0 45px;
+}
+
+.feature-card {
+  flex: 1 1 200px;
+  max-width: 280px;
+  padding: 28px 20px;
+  border-radius: 16px;
+  background: rgba(111, 111, 112, 0.301);
+  border: 1px solid rgba(231, 173, 173, 0.8);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.13);
+}
+
+.feature-icon {
+  font-size: 32px;
+  color: #555b63;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  font-weight: 750;
+  margin: 15px 0 10px;
+}
+
+.feature-card p {
+  color: #5e5a94;
+  line-height: 1.7;
+}
+
+/* Shop Now */
+.about-cta {
+  padding: 40px 20px;
+  margin-bottom: 25px;
+  background: #484a4e;
+  color: white;
+  border-radius: 18px;
+}
+
+.about-cta h2 {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.about-cta p {
+  color: #e0e0e0;
+  margin: 15px 0 25px;
+  line-height: 1.7;
+}
+
+.shop-now-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.shop-now-btn:hover {
+  background: #dfe1e4;
+  transform: translateY(-2px);
+}
+
+
+

@@ -1,13 +1,17 @@
 
-import { useState, useEffect } from "react";
 import api from "../../services/config";
 import ProductCard from "../ProductCard";
-
+import { useState, useEffect, useContext } from "react";
+import { UserContext } from "../Search.jsx";
+import Number from "../Number.jsx";
 
 const Homepages = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const { search, setSearch } = useContext(UserContext);
+  const [input, setInput] = useState("");
 
   useEffect(() => {
     const loadData = async () => {
@@ -16,7 +20,7 @@ const Homepages = () => {
         setProducts(data);
       } catch (err) {
         console.error(err);
-        setError("دریافت محصولات ناموفق بود.");
+        setError("Fail to fetch products...");
       } finally {
         setLoading(false);
       }
@@ -25,8 +29,16 @@ const Homepages = () => {
     loadData();
   }, []);
 
+  const filteredProducts = products.filter((product) => {
+    if (search === "") {
+      return true;
+    }
+
+    return product.category === search;
+  });
+
   if (loading) {
-    return <p>Please wait , loading products...</p>;
+    return <p>Please wait, loading products...</p>;
   }
 
   if (error) {
@@ -34,10 +46,22 @@ const Homepages = () => {
   }
 
   return (
-    <div> 
+    <div>
+      <Number />
+      <div className="search-container">
+        <input
+          type="text"
+          placeholder="Search products..."
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+        />
+  <button onClick={() => setSearch(input)}>
+  Search
+  </button>
+      </div>
 
       <div className="products-container">
-        {products. slice (0, 12) .map((product) => (
+        {filteredProducts.slice(0, 12).map((product) => (
           <ProductCard
             product={product}
             key={product.id}
@@ -49,6 +73,3 @@ const Homepages = () => {
 };
 
 export default Homepages;
-
-
-

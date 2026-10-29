@@ -385,4 +385,41 @@ border-radius: 5px;
 }
 
 
+.click{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+   flex-direction: row;
+   align-items: center;
+ 
 
+}
+
+input {
+  width: 200px;
+  height: 20px;
+  box-sizing: border-box;
+
+}
+
+.click h2{
+padding-right:30px;
+
+}
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+
+}
+.search-container input{
+
+width: 200px;
+  height: 20px;
+}
+.search-container button{
+  width: 100px;
+
+}

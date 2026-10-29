@@ -13,12 +13,6 @@ const Header = () => {
         <Link to="/users">Users</Link>
         <Link to="/about">About Us</Link>
       </nav>
-
-       <button className="shop-button">
-    <img src="./assets/cart.png" alt="" style={{ width: "50px ", height: "20px"}} />
-       Shop Now
-       </button>
-      
     </header>
   );
 };
